@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        </meta>
+        <style>
+            form {
+                text-align: center;
+                border: 2px solid red;
+                background-color: white;
+                color: blue;
+                font-family: verdana;
+                font: size:50px;
+            }
+            input {
+                font-size: 30px;
+                color:green;
+                width: 400px;
+            }
+        </style>
+
+    </head>
+    <body>
+        <form action="#" onsubmit="onsignup(event)">
+            <label>Name:</label>
+            <br>
+            <input type="text" name="username" required/>
+            <br>
+            <label>Email:</label>
+            <br>
+            <input type="email" name="email" required/>
+            <br>
+            <label>Password:</label>
+            <br>
+            <input type="password" name="password" required/>
+            <br>
+            <button>Signup</button>
+        </form>
+        <script>
+            function.onsignup(event) {
+                    event.preventDefault();
+                    console.log(event.target.username.value);
+            }            
+        </script>
+    </body>
+</html>
