@@ -1,2 +1,2 @@
-var birthday=new Date();
-console.log(birthday);
+var items=document.getElementsByClassName('list-group-item');
+console.log(items);
